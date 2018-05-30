@@ -1,0 +1,17 @@
+  <table>
+    <tr>
+      <td>Nome</td>
+      <td>Cognome</td>
+      <td>Email</td>
+      <td>Gruppo</td>
+    </tr>
+    {% for utente in utenti %}
+      <tr>
+        <td>{{ utente[0].nome }}</td>
+        <td>{{ utente[0].cognome }}</td>
+        <td>{{ utente[0].email }}</td>
+        <td>{{ utente.nomegruppo }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+

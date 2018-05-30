@@ -1,0 +1,21 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+prova_twig:
+  path:      /prova/{name}
+  controller: App\Controller\ProvaController::twig
+  defaults:
+      name: "default name"
+
+crea_utenti:
+  path:      /crea-utenti
+  controller: App\Controller\ProvaController::creaUtenti
+
+prova_doctrine:
+  path: /prova-doctrine
+  controller: App\Controller\ProvaController::provaDoctrine
+
+prova_symfony:
+  path: /prova-symfony
+  controller: App\Controller\ProvaController:provaSymfony
