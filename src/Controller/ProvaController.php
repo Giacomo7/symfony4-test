@@ -73,5 +73,14 @@ class ProvaController extends Controller{
         $params['random'] = $this->rgs->getRandom();
         return $this->render('prova/prova-symfony.html.twig', $params);
     }
+
+    public function home(){
+        $params['urls'][0] = $this->generateUrl('prova_twig', array('name' => $this->rgs->getRandom()));
+        $params['urls'][1] = $this->generateUrl('crea_utenti', array());
+        $params['urls'][2] = $this->generateUrl('prova_doctrine', array());
+        $params['urls'][3] = $this->generateUrl('prova_symfony', array());
+
+        return $this->render('prova/home.html.twig', $params);
+    }
 }
 ?>

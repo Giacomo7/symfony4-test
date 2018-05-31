@@ -2,11 +2,15 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
+home:
+  path: /
+  controller: App\Controller\ProvaController::home
+
 prova_twig:
   path:      /prova/{name}
   controller: App\Controller\ProvaController::twig
   defaults:
-      name: "default name"
+      name: "default_name"
 
 crea_utenti:
   path:      /crea-utenti
